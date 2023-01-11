@@ -8,7 +8,7 @@ RECEIVER = "cpythonista@gmail.com"
 
 
 def send_email(image_path):
-    email_message = EmailMessage
+    email_message = EmailMessage()
     email_message["Subject"] = "New customer showed up!"
     email_message.set_content("Hey, we just saw a new customer!")
 
@@ -25,4 +25,4 @@ def send_email(image_path):
 
 
 if __name__ == "__main__":
-    send_email()
+    send_email("images/153.png")
